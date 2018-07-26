@@ -82,7 +82,7 @@
         $("#controls").remove();
         
         // Fetch up to 200 features in one big fetch.
-        api.get("/products/" + productKey + "/initiatives", {per_page: 200}, function(response) {
+        api.get("/products/" + productKey + "/initiatives", {per_page: 200, fields: 'name,custom_fields.problemopportunity'}, function(response) {
           $("#feature-template").tmpl(response.initiatives).appendTo("#features");
         });
       });
