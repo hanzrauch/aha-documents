@@ -72,8 +72,8 @@
     $("#controls").submit(function() {    
       new AhaApi({
         accountDomain: $("#subdomain").val(),
-        clientId: "a73bbb264c7432421b9abc05fae6bf93f541979b9fb49bbef684ab036487fd5b", // NOTE: replace this with your client ID.
-        redirectUri: "http://lvh.me:4567/scorecard.html"
+        clientId: "7f83220a7183cc862c922fe34f03ce645b84ed448ab12fdcad79bd599fba43bf", // NOTE: replace this with your client ID.
+        redirectUri: "https://hanzrauch.github.io/aha-documents/javascript-example.html"
       }).authenticate(function(api, success, message) {
         var productKey = $("#product-key").val();
         
