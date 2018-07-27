@@ -83,7 +83,7 @@
         
         // Fetch up to 200 features in one big fetch.
         api.get("/products/" + productKey + "/initiatives/6503028690147205846", {}, function(response) {
-          $("#feature-template").tmpl(response.initiatives).appendTo("#features");
+          $("#feature-template").tmpl(response).appendTo("#features");
         });
       });
       return false;
